@@ -1,0 +1,14 @@
+.container {
+  height: 600px;
+  width: 500px;
+  background-color: gray;
+}
+.navbar{
+  display: flex;
+}
+ion-icon{
+  font-size: 26px;
+}
+.checked{
+  text-decoration: line-through;
+}
