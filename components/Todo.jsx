@@ -36,7 +36,7 @@ export default function AddTodo() {
         localStorage.setItem("todos",JSON.stringify(todos))
     },[todos])                                       
   return (
-    <div className="container">
+    <div className="content">
     <nav className="navbar">
         <input type="text" 
         placeholder='add task to do' 
@@ -45,7 +45,6 @@ export default function AddTodo() {
         <button onClick={addTask}><ion-icon name="add"></ion-icon></button>
     </nav>
     <main className="tasks">
-        <h1>Hello</h1>
         {todos.length>0?elements:<div> Add to do tasks</div>}
     </main>
     </div>
