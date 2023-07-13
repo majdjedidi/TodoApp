@@ -6,18 +6,18 @@ body{
   font-family: 'Quicksand',sans-serif;
 }
 .container{
-  width: 500px;
+  width: 400px;
   margin:auto;
   padding: 50px;
 }
 .content{
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-
+  min-height: 500px;
 }
 .navbar{
 position: relative;
-  height: 60px;
+  height: 100px;
   align-items: center;
   background-color: #80ced6;  
   box-shadow: 0px 1px 4px  rgba(0, 0, 0, 0.25);
@@ -26,19 +26,19 @@ position: relative;
 }
 .navbar input{
   width: 90%;
-  height:60%;
+  height:40%;
   border-radius: 10px;
   border: none;
   text-indent: 10px;
   position:absolute;
-  top: 10px;
+  top: 40px;
   left: 20px;
   bottom: 10px;
 }
 .navbar button{
   position: absolute;
   right: 25px;
-  top: 10px;
+  top: 40px;
   overflow: hidden;
   height: 40px;
   width: 40px;
@@ -48,14 +48,17 @@ position: relative;
   overflow: hidden;
   cursor: pointer;
 }
+.navbar h1{
+  position: relative;
+  left: 50%;
+  transform: translateX(-25%);
+  font-weight: 800;
+}
 ion-icon{
   font-size: 22px;
 }
 .navbar ion-icon{
   font-size: 30px;
-}
-.checked{
-  text-decoration: line-through;
 }
 .item{
   display: flex;
@@ -77,6 +80,49 @@ ion-icon{
   visibility: hidden;
   cursor: pointer;
 }
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.btn-check{
+  border: 1px solid grey;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+  cursor: pointer;
+  color: white;
+  visibility: hidden;
+}
+.checked{
+  background-color: #80ced6;
+  color: white;
+  border-color: #80ced6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+  cursor: pointer;
+}
+.btn-check:hover{
+  background-color: #80ced6;
+  color: white;
+  border-color: #80ced6;
+}
 .item:hover > .controls .btn {
   visibility: visible !important;
+}
+
+.item:hover > .task .btn-check {
+  visibility: visible !important;
+}
+.empty{
+  position: relative;
+  left: 20px;
+  font-size: 20px;
+  margin-top: 10px;
+  line-height: 30px;
 }
