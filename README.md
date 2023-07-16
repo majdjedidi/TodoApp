@@ -12,3 +12,6 @@ User can :
 - set important todos
 - a notification reminder
 
+  Hosted on  [Netlify](https://sprightly-conkies-31d53b.netlify.app/)
+
+
